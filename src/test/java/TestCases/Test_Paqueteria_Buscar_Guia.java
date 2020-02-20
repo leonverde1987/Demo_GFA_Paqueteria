@@ -46,7 +46,7 @@ public class Test_Paqueteria_Buscar_Guia extends steps_Paqueteria_Buscar_Guia{
         contador = 1;
         RutaEvidencia = Config.getProperty("rutaEvidencia");
         Resultado = "Fallido";
-        Navegador = Config.getProperty("NavegadorPaq");
+        Navegador = Config.getProperty("Navegador");
         driver = this.openGridBrowser(Navegador, Config);
         
     }
