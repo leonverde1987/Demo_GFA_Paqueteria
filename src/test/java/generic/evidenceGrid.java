@@ -354,8 +354,8 @@ public class evidenceGrid {
             
             printw.println("<style>");
                 printw.println(".accordion {");
-                  printw.println("background-color: #eee;");
-                  printw.println("color: #444;");
+                  printw.println("background-color: #04B431;");
+                  printw.println("color: #FFF;");
                   printw.println("cursor: pointer;");
                   printw.println("padding: 18px;");
                   printw.println("width: 100%;");
@@ -368,7 +368,7 @@ public class evidenceGrid {
                 
                 printw.println(".fallaAccordion {");
                   printw.println("background-color: #f44336;");
-                  printw.println("color: #444;");
+                  printw.println("color: #FFF;");
                   printw.println("cursor: pointer;");
                   printw.println("padding: 18px;");
                   printw.println("width: 100%;");
@@ -381,7 +381,7 @@ public class evidenceGrid {
                 
                 printw.println(".ejecucionAccordion {");
                   printw.println("background-color: #ff9800;");
-                  printw.println("color: #444;");
+                  printw.println("color: #FFF;");
                   printw.println("cursor: pointer;");
                   printw.println("padding: 18px;");
                   printw.println("width: 100%;");
@@ -577,6 +577,7 @@ public class evidenceGrid {
                 printw.println("</table>");
             }
             printw.println("<h2 class=\"titulo\">Pasos de Ejecución: </h2>");
+            printw.println("<h4 class=\"titulo\">Presiona sobre el paso de ejecución para ver la su imagen.</h4>");
             for(int cont=0; cont<contador; cont++){
                 if((cont+1)<contador){
                     try{
