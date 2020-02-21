@@ -393,16 +393,16 @@ public class evidenceGrid {
                 printw.println("}");
 
                 printw.println(".active, .exitosoAccordion:hover {");
-                  printw.println("background-color: #ccc;");
+                  printw.println("background-color: #46a049;");
                 printw.println("}");
                 
-//                printw.println(".active, .ejecucionAccordion:hover {");
-//                  printw.println("background-color: #ff9800;");
-//                printw.println("}");
-//                
-//                printw.println(".active, .fallaAccordion:hover {");
-//                  printw.println("background-color: #f44336;");
-//                printw.println("}");
+                printw.println(".activeEjecucion, .ejecucionAccordion:hover {");
+                  printw.println("background-color: #e68a00;");
+                printw.println("}");
+                
+                printw.println(".activeFalla, .fallaAccordion:hover {");
+                  printw.println("background-color: #da190b;");
+                printw.println("}");
 
                 
                 
@@ -431,6 +431,14 @@ public class evidenceGrid {
                 printw.println("}");
 
                 printw.println(".active:after {");
+                  printw.println("content: \"\2212\";");
+                printw.println("}");
+                
+                printw.println(".activeEjecucion:after {");
+                  printw.println("content: \"\2212\";");
+                printw.println("}");
+                
+                printw.println(".activeFalla:after {");
                   printw.println("content: \"\2212\";");
                 printw.println("}");
 
@@ -577,7 +585,7 @@ public class evidenceGrid {
                 printw.println("</table>");
             }
             printw.println("<h2 class=\"titulo\">Pasos de Ejecución: </h2>");
-            printw.println("<h4 class=\"titulo\">Presiona sobre el paso de ejecución para ver la su imagen.</h4>");
+            printw.println("<h4 class=\"titulo\">Presiona sobre el paso de ejecución para ver la evidencia.</h4>");
             for(int cont=0; cont<contador; cont++){
                 if((cont+1)<contador){
                     try{
@@ -663,7 +671,7 @@ public class evidenceGrid {
 
             printw.println("for (i = 0; i < acc.length; i++) {");
               printw.println("acc[i].addEventListener(\"click\", function() {");
-                printw.println("this.classList.toggle(\"active\");");
+                printw.println("this.classList.toggle(\"activeEjecucion\");");
                 printw.println("var panel = this.nextElementSibling;");
                 printw.println("if (panel.style.maxHeight) {");
                   printw.println("panel.style.maxHeight = null;");
@@ -680,7 +688,7 @@ public class evidenceGrid {
 
             printw.println("for (i = 0; i < acc.length; i++) {");
               printw.println("acc[i].addEventListener(\"click\", function() {");
-                printw.println("this.classList.toggle(\"active\");");
+                printw.println("this.classList.toggle(\"activeFalla\");");
                 printw.println("var panel = this.nextElementSibling;");
                 printw.println("if (panel.style.maxHeight) {");
                   printw.println("panel.style.maxHeight = null;");
