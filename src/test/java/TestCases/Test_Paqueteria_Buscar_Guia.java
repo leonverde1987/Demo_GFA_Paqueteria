@@ -59,7 +59,7 @@ public class Test_Paqueteria_Buscar_Guia extends steps_Paqueteria_Buscar_Guia{
             Navegador = this.navegador(driver.toString());
             
             //Paso 1
-            Pasos.add(contador+".- Abrimos navegador en la URL: "+Config.getProperty("urlAppPaqueteria"));
+            Pasos.add(contador+".- Abrir navegador en la URL: "+Config.getProperty("urlAppPaqueteria"));
             this.ingresar_A_URL(driver, contador, Config, Escenario, Navegador);
             
             //Paso 2
