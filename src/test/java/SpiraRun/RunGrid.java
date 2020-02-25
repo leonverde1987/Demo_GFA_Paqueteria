@@ -28,6 +28,7 @@ public class RunGrid {
         Config.setProperty("Navegador","chrome");
         Config.store(new FileWriter("configuracion\\configuracion.properties"),"Cambio de Navegador a Chrome");
         core.run (TestCases.Test_Paqueteria_Buscar_Guia.class);
+        
         Config.setProperty("Navegador","firefox");
         Config.store(new FileWriter("configuracion\\configuracion.properties"),"Cambio de Navegador a firefox");
         core.run (TestCases.Test_Paqueteria_Buscar_Guia.class);
