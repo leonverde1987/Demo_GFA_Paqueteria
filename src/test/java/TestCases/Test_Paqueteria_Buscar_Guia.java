@@ -56,7 +56,6 @@ public class Test_Paqueteria_Buscar_Guia extends steps_Paqueteria_Buscar_Guia{
     public void Test_Buscar_Guia() throws InterruptedException, DocumentException, BadElementException, IOException, Exception {
         try{
             Escenario = "PAQ_Home_Buscar_Guia_que_no_Existe.";
-            Navegador = this.navegador(driver.toString());
             
             //Paso 1
             Pasos.add(contador+".- Abrir navegador en la URL: "+Config.getProperty("urlAppPaqueteria"));

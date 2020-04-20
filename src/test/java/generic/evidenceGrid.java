@@ -253,7 +253,7 @@ public class evidenceGrid {
             Table PasosEvidencia = new Table(1);
             Paragraph parrafo6 = null;
             try{
-            parrafo6 = new Paragraph("Paso: "+Pasos.get(a));
+                parrafo6 = new Paragraph("Paso: "+Pasos.get(a));
             }catch(Exception e){
                 parrafo6 = new Paragraph("Paso: Sin Registro");
             }
@@ -614,7 +614,11 @@ public class evidenceGrid {
                     }
                     printw.println("<div class=\"panel\">");
                     try{
-                        printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"100%\" height=\"100%\"></center></p>");
+                        if(navegador.equals("firefox") || navegador.equals("chrome") || navegador.equals("edge") || navegador.equals("ie")){
+                            printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"100%\" height=\"100%\"></center></p>");
+                        }else{
+                            printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"50%\"></center></p>");
+                        }
                     }catch(Exception e){
                     }
                     printw.println("</div>");
@@ -628,7 +632,11 @@ public class evidenceGrid {
                         }
                         printw.println("<div class=\"panel\">");
                         try{
-                            printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"100%\" height=\"100%\"></center></p>");
+                            if(navegador.equals("firefox") || navegador.equals("chrome") || navegador.equals("edge") || navegador.equals("ie")){
+                                printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"100%\" height=\"100%\"></center></p>");
+                            }else{
+                                printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"50%\"></center></p>");
+                            }
                         }catch(Exception e){
                         }
                         printw.println("</div>");
@@ -641,7 +649,11 @@ public class evidenceGrid {
                         }
                         printw.println("<div class=\"panel\">");
                         try{
-                            printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"100%\" height=\"100%\"></center></p>");
+                            if(navegador.equals("firefox") || navegador.equals("chrome") || navegador.equals("edge") || navegador.equals("ie")){
+                                printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"100%\" height=\"100%\"></center></p>");
+                            }else{
+                                printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"50%\"></center></p>");
+                            }
                         }catch(Exception e){
                         }
                         printw.println("</div>");
@@ -655,7 +667,12 @@ public class evidenceGrid {
                             }
                             printw.println("<div class=\"panel\">");
                             try{
-                                printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"100%\" height=\"100%\"></center></p>");
+                                if(navegador.equals("firefox") || navegador.equals("chrome") || navegador.equals("edge") || navegador.equals("ie")){
+                                    printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"100%\" height=\"100%\"></center></p>");
+                                }
+                                else{
+                                    printw.println("<p><center><img src=\""+rutaEvidencia+"\\"+this.fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)+"\\"+this.totalArchivos(new File(rutaEvidencia+"\\"+fechaFormato()+"\\"+navegador+"\\"+CasoPrueba.substring(0, 3)))+"\\"+CasoPrueba+"\\evidencia"+(cont+1)+".png\" width=\"50%\"></center></p>");
+                                }
                             }catch(Exception e){
                             }
                             printw.println("</div>");
@@ -843,7 +860,9 @@ public class evidenceGrid {
             if("si".equals(reporte.getProperty("safari"))){
                 printw.println("<button class=\"btn navegadores\" onClick=\"\"><img src=\"C:\\ambiente\\imagenes\\ie.png\" width=\"25\" height=\"25\"/></button>");
             }
-            
+            if("si".equals(reporte.getProperty("motorola"))){
+                printw.println("<button class=\"btn navegadores\" onClick=\"motorolaOneVision()\"><img src=\"C:\\ambiente\\imagenes\\motorola2.png\" width=\"25\" height=\"25\"/></button>");
+            }
             printw.println("</div>");
             
             printw.println("<div id=\"contenido\">");
@@ -852,6 +871,9 @@ public class evidenceGrid {
             printw.println("</div>");
             printw.println("<div id=\"contenidoFirefox\" class=\"divDetalle\" style=\"display: none;\">");
             printw.println("<iframe id=\"frameDetalle"+navegador+"\" class=\"frameDetalle\" src=\"firefox.html\"></iframe>");
+            printw.println("</div>");
+             printw.println("<div id=\"contenidomotorolaOneVision\" class=\"divDetalle\" style=\"display: none;\">");
+            printw.println("<iframe id=\"frameDetalle"+navegador+"\" class=\"frameDetalle\" src=\"motorolaOneVision.html\"></iframe>");
             printw.println("</div>");
             printw.println("</div>");
             printw.println("</div>");
@@ -866,10 +888,17 @@ public class evidenceGrid {
             printw.println("function firefox() {");
             printw.println("document.getElementById('contenidoChrome').style.display='none';");
             printw.println("document.getElementById('contenidoFirefox').style.display='block';");
+            printw.println("document.getElementById('contenidomotorolaOneVision').style.display='none';");
             printw.println("}");
             printw.println("function chrome() {");
             printw.println("document.getElementById('contenidoFirefox').style.display='none';");
             printw.println("document.getElementById('contenidoChrome').style.display='block';");
+            printw.println("document.getElementById('contenidomotorolaOneVision').style.display='none';");
+            printw.println("}");
+            printw.println("function motorolaOneVision() {");
+            printw.println("document.getElementById('contenidomotorolaOneVision').style.display='block';");
+            printw.println("document.getElementById('contenidoChrome').style.display='none';");
+            printw.println("document.getElementById('contenidoFirefox').style.display='none';");
             printw.println("}");
             printw.println("</script>");
             
