@@ -10,5 +10,6 @@ package SpiraRun;
  * @author TestingIT
  */
 public class NewClass1 {
-    
+    public void pruebas(){
+    }
 }
