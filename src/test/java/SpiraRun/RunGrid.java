@@ -25,10 +25,10 @@ public class RunGrid {
         JUnitCore core = new JUnitCore();
         core.addListener(new SpiraTestListener());
         //new generic.genericGrid().leventarNodosGrid();
-        Config.setProperty("Navegador","motorolaOneVision");
-        Config.store(new FileWriter("configuracion\\configuracion.properties"),"Cambio de Navegador a motorolaOneVision");
-        core.run (TestCases.Test_Paqueteria_Buscar_Guia.class);
-        
+//        Config.setProperty("Navegador","motorolaOneVision");
+//        Config.store(new FileWriter("configuracion\\configuracion.properties"),"Cambio de Navegador a motorolaOneVision");
+//        core.run (TestCases.Test_Paqueteria_Buscar_Guia.class);
+//        
         Config.setProperty("Navegador","chrome");
         Config.store(new FileWriter("configuracion\\configuracion.properties"),"Cambio de Navegador a Chrome");
         core.run (TestCases.Test_Paqueteria_Buscar_Guia.class);
