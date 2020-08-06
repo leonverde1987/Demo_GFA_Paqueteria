@@ -301,12 +301,12 @@ public class genericGrid extends evidenceGrid {
             case "id":
                 driver.findElement(By.id(Elemento)).clear();
                 driver.findElement(By.id(Elemento)).sendKeys(Texto);
-                driver.findElement(By.id(Elemento)).submit();
+                //driver.findElement(By.id(Elemento)).submit();
                 break;
             case "name":
                 driver.findElement(By.name(Elemento)).clear();
                 driver.findElement(By.name(Elemento)).sendKeys(Texto);
-                driver.findElement(By.name(Elemento)).submit();
+                //driver.findElement(By.name(Elemento)).submit();
                 break;
             case "xpath":
                 try{

@@ -8,7 +8,7 @@ import java.util.Properties;
 import org.junit.ComparisonFailure;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class steps_Paqueteria_Buscar_Guia extends genericGrid{
+public class steps_PO_Solicitudes_Compras_Leo extends genericGrid{
     
     
     public String navegador(String Cadena){
@@ -58,8 +58,10 @@ public class steps_Paqueteria_Buscar_Guia extends genericGrid{
      * @throws FileNotFoundException Cacha cualquier excepción en la ejecución.
      * @throws InterruptedException Cacha si el archivo Config no existe. 
      */
-    public void ingresar_guia(RemoteWebDriver driver, String textoBuscar, int contador, Properties Config, Properties Elementos, String Escenario, String navegador) throws FileNotFoundException, InterruptedException {
-        this.ingresar_texto(driver, "id", Elementos.getProperty("id_txt_numGuia"), textoBuscar);
+    public void Login_Oracle(RemoteWebDriver driver, String usuario, String contrasena, int contador, Properties Config, Properties Elementos, String Escenario, String navegador) throws FileNotFoundException, InterruptedException {
+        this.ingresar_texto(driver, "id", Elementos.getProperty("id_usuario"), usuario);
+        this.ingresar_texto(driver, "id", Elementos.getProperty("id_contrasena"), contrasena);
+        this.clic_btn(driver, "id", Elementos.getProperty("btn_conexion"));
         this.capturaDriver(driver, Config.getProperty("rutaEvidencia"), contador, Escenario, navegador);
     }
     
